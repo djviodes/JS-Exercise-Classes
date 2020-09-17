@@ -13,13 +13,13 @@ This challenge focuses on using the new for ES6 `class` syntax.
 
 ### Task 1 - Set up Project
 
-1. Fork repo and add TL as collaborator on Github.
-1. Clone _your_ fork (not Lambda's repo by mistake!).
-1. `cd` into your newly cloned repository.
-1. Create a new branch by typing `git checkout -b <firstName-lastName>`.
-1. Install dependencies by typing `npm install`.
-1. Run tests by typing `npm run test:watch`.
-1. Work on your branch, push commits and create PR as usual.
+1. [X] Fork repo and add TL as collaborator on Github.
+1. [X] Clone _your_ fork (not Lambda's repo by mistake!).
+1. [X] `cd` into your newly cloned repository.
+1. [X] Create a new branch by typing `git checkout -b <firstName-lastName>`.
+1. [X] Install dependencies by typing `npm install`.
+1. [X] Run tests by typing `npm run test:watch`.
+1. [X] Work on your branch, push commits and create PR as usual.
 
 ### Task 2a - MVP
 
@@ -45,7 +45,7 @@ There are stretch goals found throughout `index.js`. Complete these after you ha
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [X] Add your team lead as a reviewer on the pull-request
+- [X] Your team lead will count the project as complete by merging the branch back into master.
 
