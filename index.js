@@ -96,9 +96,12 @@ class Car {
     this.tank = this.tank + gallons;
   }
   drive(distance){
-    this.odometer = this.odometer + distance;
-    this.tank = ((this.tank * this.milesPerGallon) - distance) / this.milesPerGallon;
-    if(this.tank === 0){
+    if(distance < (this.tank * this.milesPerGallon)){
+      this.odometer = this.odometer + distance;
+      this.tank = this.tank - (distance/this.milesPerGallon);
+    } else {
+      this.odometer = this.odometer + (this.tank * this.milesPerGallon);
+      this.tank = 0;
       return `I ran out of fuel at ${this.odometer} miles!`;
     }
   }
@@ -106,9 +109,10 @@ class Car {
 
 const carOne = new Car('Civic', 30);
 
-carOne.fill(5);
+carOne.fill(6);
 
 console.log(carOne);
+console.log(carOne.drive(300));
 
 /*
   TASK 3
@@ -197,7 +201,7 @@ class Student extends Lambdasian {
   listSubjects(){
     return `Loving ${this.favSubjects}!`;
   }
-  PRAssignments(subject){
+  PRAssignment(subject){
     return `${this.name} has submitted a PR for ${subject}.`;
   }
   sprintChallenge(subject){
@@ -209,7 +213,7 @@ const codingStudent = new Student({name: 'David', age: 24, location: 'CA', previ
 
 console.log(codingStudent);
 console.log(codingStudent.listSubjects());
-console.log(codingStudent.PRAssignments('HTML'));
+console.log(codingStudent.PRAssignment('HTML'));
 console.log(codingStudent.sprintChallenge('JavaScript'));
 
 /*
